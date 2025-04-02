@@ -4,13 +4,11 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 const Home = () => {
     const url=`${process.env.REACT_APP_GET_LINKS}`;
-    console.log("url is ",url);
     const [link,setLink]=useState("");
     useEffect(()=>{
         const getLink=async()=>{
             try{
                 const response=await axios.get(url);
-                console.log("response is ",response);
                 setLink(response.data);
             }
             catch(err){

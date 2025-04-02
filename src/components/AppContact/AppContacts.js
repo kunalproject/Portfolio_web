@@ -2,7 +2,7 @@ import React from "react";
 import {  FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa"; // Import icons
 import "./AppContacts.css"; // Import the CSS file
 import {PortfolioContext} from '../../context/PortfolioContext'
-import { useContext ,useState} from 'react'
+import { useContext } from 'react'
 const AppContacts = () => {
   const {portfolioData} = useContext(PortfolioContext);
   let apps = [
@@ -12,7 +12,6 @@ const AppContacts = () => {
     { name: "GitHub", icon: <FaGithub />, link: portfolioData.github },
   ];
   apps=apps.filter(app=>app.link!=null);
-  console.log("apps is ",apps);
   return (
     <div className="app-contacts">
       <div className="app-icons">

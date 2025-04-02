@@ -8,10 +8,11 @@
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-top: 20px;
-            margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
-.toast-msg{
+
+.toast-msg {
     position: absolute;
     top: 0;
     left: 0;
@@ -23,6 +24,7 @@
     text-align: center;
     display: none;
 }
+
 .contact-section h2 {
     font-size: 2rem;
     color: #333;
@@ -46,16 +48,19 @@
     font-size: 1rem;
     color: #333;
     margin-bottom: 5px;
+    margin-left: 10%;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     outline: none;
+    margin-left: 10%;
+
 }
 
 .form-group textarea {
@@ -119,11 +124,12 @@ button:disabled {
     button {
         font-size: 0.95rem;
     }
-.contact-section {
-    max-width: 85%;
-    padding: 30px 15px;
 
-}
+    .contact-section {
+        max-width: 85%;
+        padding: 30px 15px;
+
+    }
 }
 
 @media (max-width: 480px) {
@@ -147,9 +153,10 @@ button:disabled {
     button {
         font-size: 0.9rem;
     }
-.contact-section {
-    max-width: 95%;
-    padding: 20px 10px;
 
-}
+    .contact-section {
+        max-width: 95%;
+        padding: 20px 10px;
+
+    }
 }

@@ -30,7 +30,6 @@ const Conntact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
-    console.log("formData is ",formData);
     try {
       // Replace with your API endpoint
       const response = await fetch(`${process.env.REACT_APP_SEND_MSG}/${username}`, {

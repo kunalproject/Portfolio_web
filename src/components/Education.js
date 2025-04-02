@@ -7,7 +7,6 @@ const Education = () => {
   const [activeIndex, setActiveIndex] = useState(0); // Track active education item
   const educationRefs = useRef([]); // Refs for each education item
   let {education} = portfolioData;
-  console.log("education is ",education);
   // Sort education array by startDate (most recent first)
   const sortedEducation = education
     .slice()

@@ -5,7 +5,7 @@ import Education from './Education'
 import './Portfolio.css'
 import Conntact from './Conntact'
 import {PortfolioContext} from '../context/PortfolioContext'
-import { useContext ,useState} from 'react'
+import { useContext } from 'react'
 // import DsaStats from './DsaStats'
 import DSAStatsSection from './Dsa_section/DsaSection'
 import Expereince from './Expereince/Expereince'
@@ -13,7 +13,6 @@ import AppContacts from './AppContact/AppContacts'
 import ProjectsSection from './Projects/Projects'
 const Portfolio = () => {
     const {dsa_stats} = useContext(PortfolioContext);
-    console.log("dsa_stats is ",dsa_stats);
     const {portfolioData} = useContext(PortfolioContext);
   return (
     <div>
