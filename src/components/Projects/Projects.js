@@ -31,6 +31,7 @@ const ProjectsSection = () => {
                   src={project.imageUrl}
                   alt={project.title}
                   className={styles.projectImage}
+                  loading="lazy
                 />
                 <h2>{project.title}</h2>
               </div>
