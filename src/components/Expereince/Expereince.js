@@ -34,6 +34,7 @@ const Expereince = () => {
                   src={exp.imageUrl}
                   alt={`${exp.company} logo`}
                   className="company-logo"
+                  loading="lazy
                 />
                 <div>
                   <h2>{exp.company}</h2>
