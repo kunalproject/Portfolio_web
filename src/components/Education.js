@@ -45,7 +45,7 @@ const Education = () => {
                 src={edu.imageUrl || "https://via.placeholder.com/100"} // Default placeholder image
                 alt={edu.institution}
                 className={styles.image}
-                loading="lazy
+                loading="lazy"
               />
             </div>
             <div className={styles.details}>
