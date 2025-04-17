@@ -21,7 +21,7 @@ const Aboutme = () => {
       )}
 
       {/* Render about only if it is not empty or undefined */}
-      {about && <p className={styles.description}>{about}</p>}
+      {about && <p className={styles.description} loading="lazy">{about}</p>}
     </div>
   );
 }
