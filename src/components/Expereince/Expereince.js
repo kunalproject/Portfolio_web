@@ -31,7 +31,7 @@ const Expereince = () => {
             >
               <div className="company-info">
                 <img
-                  src={exp.imageUrl}
+                  src={exp.imageUrl || "https://res.cloudinary.com/dmmwlsock/image/upload/v1742704323/portfolio/sbt1ebmtvim89f5qcjwl.jpg"}
                   alt={`${exp.company} logo`}
                   className="company-logo"
                   loading="lazy"
