@@ -42,7 +42,7 @@ const Education = () => {
           <div key={index} className={styles.educationItem}>
             <div className={styles.imageContainer}>
               <img
-                src={edu.imageUrl || "https://via.placeholder.com/100"} // Default placeholder image
+                src={edu.imageUrl || "https://res.cloudinary.com/dmmwlsock/image/upload/v1742704062/portfolio/dntqohn5gtm8k7qcutmj.jpg"} // Default placeholder image
                 alt={edu.institution}
                 className={styles.image}
                 loading="lazy"
