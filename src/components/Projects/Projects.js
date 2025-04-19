@@ -28,7 +28,7 @@ const ProjectsSection = () => {
             >
               <div className={styles.projectInfo}>
                 <img
-                  src={project.imageUrl}
+                  src={project.imageUrl || "https://res.cloudinary.com/dmmwlsock/image/upload/v1742555588/portfolio/go2x0zwitrst7vtnp1ne.png"}
                   alt={project.title}
                   className={styles.projectImage}
                   loading="lazy"
