@@ -9,7 +9,7 @@ const Header = () => {
       <div className={styles.content}>
         <div className={styles.leftSection}>
           <div className={styles.imageContainer}>
-            <img src={portfolioData.profilePic || "https://res.cloudinary.com/dmmwlsock/image/upload/v1745085967/profile_aur9se.png" } alt={"https://res.cloudinary.com/dmmwlsock/image/upload/v1745085967/profile_aur9se.png"} className={styles.image} loading="lazy" />
+            <img src={portfolioData.profilePic || "https://res.cloudinary.com/dmmwlsock/image/upload/v1745085967/profile_aur9se.png" } loading="lazy" alt={"https://res.cloudinary.com/dmmwlsock/image/upload/v1745085967/profile_aur9se.png"} className={styles.image} loading="lazy" />
           </div>
           <h1 className={styles.name}>{portfolioData.name}</h1>
         </div>
