@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from './Header'
-import Aboutme from './Aboutme'
+// import Aboutme from './Aboutme'
+const Aboutme = React.lazy(() => import('./Aboutme'));
+const ProjectsSection = React.lazy(() => import('./Projects/Projects'));
 import Education from './Education'
 import './Portfolio.css'
 import Conntact from './Conntact'
@@ -10,7 +12,7 @@ import { useContext } from 'react'
 import DSAStatsSection from './Dsa_section/DsaSection'
 import Expereince from './Expereince/Expereince'
 import AppContacts from './AppContact/AppContacts'
-import ProjectsSection from './Projects/Projects'
+// import ProjectsSection from './Projects/Projects'
 const Portfolio = () => {
     const {dsa_stats} = useContext(PortfolioContext);
     const {portfolioData} = useContext(PortfolioContext);
