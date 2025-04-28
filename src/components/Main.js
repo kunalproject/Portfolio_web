@@ -16,10 +16,19 @@ const Main = () => {
       try {
         const url=`${process.env.REACT_APP_BASE_URL}/${username}`;
         const dsa_url=`${process.env.REACT_APP_DSA_STATS}/${username}`;
+        
+        
+        
+          try{
+              const response = await axios.get(url);
+              setPortfolioData(response.data);
+          }
+          catch(err){
+              setError(err.message);
+          }
         const dsa=await axios.get(dsa_url);
-        const response = await axios.get(url);
         setdsa_stats(dsa.data.stats);
-        setPortfolioData(response.data);
+        
       } catch (err) {
         setError(err.message);
       } finally {
